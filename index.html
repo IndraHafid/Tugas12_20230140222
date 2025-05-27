@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pendaftaran Kontes Motor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form id="formKontes" class="form-box">
+      <h2>🏁>  Contest Registration <🏁</h2>
+
+      <label for="nama">Nama Peserta</label>
+      <input type="text" id="nama" placeholder="Nama lengkap" />
+
+      <label for="telepon">No. Telepon</label>
+      <input type="text" id="telepon" placeholder="08xxxxxxx" />
+
+      <label for="jenis">Jenis Motor</label>
+      <select id="jenis">
+        <option value="Matic">Matic</option>
+        <option value="Bebek">Bebek</option>
+        <option value="Sport">Sport</option>
+        <option value="Custom">Custom</option>
+      </select>
+
+      <p>Kategori Kontes:</p>
+      <div class="radio-group">
+        <label><input type="radio" name="kategori" value="Modifikasi"> Proper Pro Matic</label>
+        <label><input type="radio" name="kategori" value="Kecepatan"> Daily Use</label>
+        <label><input type="radio" name="kategori" value="Klasik"> 2/4 Tak Restorasi Fasion</label>
+        <label><input type="radio" name="kategori" value="Harian"> Vietnam Style</label>
+        <label><input type="radio" name="kategori" value="Harian"> Sunmori Style</label>
+      </div>
+
+      <label for="tim">Nama Tim (Opsional)</label>
+      <input type="text" id="tim" placeholder="Isi jika ada" />
+
+      <label for="alamat">Alamat Domisili</label>
+      <textarea id="alamat" rows="3" placeholder="Tulis alamat lengkap..."></textarea>
+
+      <label for="tanggal">Tanggal Daftar</label>
+      <input type="date" id="tanggal" />
+
+      <button type="button" onclick="kirimData()">Kirim Pendaftaran</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
